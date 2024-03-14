@@ -7,30 +7,18 @@ import java.util.*;
  */
 public class Persona1 {
 
-    /**
-     * Default constructor
-     */
+
     public Persona1() {
     }
 
-    /**
-     * 
-     */
     private String DNI ;
 
-    /**
-     * 
-     */
+
     private String nombre ;
 
-    /**
-     * 
-     */
+
     private String apellidos ;
 
-    /**
-     * 
-     */
     private int edad ;
 
     /**
@@ -41,7 +29,7 @@ public class Persona1 {
      * @param edad
      */
     public void Persona(String DNI, String nombre, String apellidos, int edad) {
-        // TODO implement here
+
     }
 
     /**
@@ -49,7 +37,7 @@ public class Persona1 {
      * @param DNI
      */
     public void setDNI(String DNI) {
-        // TODO implement here
+    	this.DNI=DNI;
     }
 
     /**
@@ -57,8 +45,7 @@ public class Persona1 {
      * @return
      */
     public String getDNI() {
-        // TODO implement here
-        return "";
+        return this.DNI;
     }
 
     /**
@@ -66,7 +53,7 @@ public class Persona1 {
      * @param nombre
      */
     public void setNombre(String nombre) {
-        // TODO implement here
+    	this.nombre=nombre;
     }
 
     /**
@@ -74,42 +61,40 @@ public class Persona1 {
      * @return
      */
     public String getNombre() {
-        // TODO implement here
-        return "";
+        return this.nombre;
     }
 
     /**
      * Establece apellido
      * @return
      */
-    public String setApellido() {
-        // TODO implement here
-        return "";
+    public String getApellido() {
+        return this.apellidos;
     }
 
     /**
      * Obtiene apellido
      * @param apellido:String
      */
-    public void getApellido(String apellido) {
-        // TODO implement here
+    public void setApellido(String apellido) {
+    this.apellidos=apellido;
     }
 
     /**
      * establece edad
      * @return
      */
-    public int setEdad() {
-        // TODO implement here
-        return 0;
+    public void setEdad(int edad) {
+    this.edad=edad;
     }
+
 
     /**
      * obtiene edad
      * @param edad
      */
-    public void getEdad(int edad) {
-        // TODO implement here
-    }
+    public int getEdad() {
+    	return this.edad;
+}
 
 }
