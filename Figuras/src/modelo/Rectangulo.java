@@ -5,9 +5,9 @@ import java.util.*;
  * 
  */
 public class Rectangulo {
-
-
-    public Rectangulo() {
+    public Rectangulo(int base, int altura) {
+        this.base = base;
+        this.altura = altura;
     }
 
     private int base;
@@ -19,7 +19,7 @@ public class Rectangulo {
      * @param base 
      * @param altura
      */
-    public void rectangulo(int base, int altura) {
+    public void Rectangulo(int base, int altura) {
      this.base=base;
      this.altura=altura;
     }
@@ -29,9 +29,9 @@ public class Rectangulo {
      * @param base  
      * @param altura
      */
-    public void rectangulo1(int base , int altura) {
-        this.base=base=1;
-        this.altura=altura=1;
+    public void Rectangulo1() {
+        this.base=1;
+        this.altura=1;
     }
 
     /**
@@ -69,16 +69,16 @@ public class Rectangulo {
     /**
      * calcular perímetro , base*2+altura*2
      */
-    public int calcularPerimetro(int perimetro) {
-        perimetro= 2*base+altura*2;
+    public int calcularPerimetro() {
+       int perimetro= 2*base+altura*2;
         return perimetro;
     }
 
     /**
      * calcular area del rectangulo,base *altura
      */
-    public int calcularArea(int area) {
-    	area=base*altura;
+    public int calcularArea() {
+    	int area=base*altura;
     	return area;
     }
 
