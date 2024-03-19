@@ -17,7 +17,7 @@ public class Circulo {
      * @param diametro 
      * @param pi
      */
-    public Circulo(double radio, double diametro, double pi) {
+    public Circulo(double radio, double diametro) {
     	this.radio=radio;
     	this.diametro=diametro;
     	this.pi=3.14;

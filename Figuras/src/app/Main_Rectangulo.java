@@ -2,7 +2,7 @@ package app;
 
 import modelo.Rectangulo;
 
-public class Main {
+public class Main_Rectangulo {
 
 	public static void main(String[] args) {
 		Rectangulo r1 = new  Rectangulo(4,4);
