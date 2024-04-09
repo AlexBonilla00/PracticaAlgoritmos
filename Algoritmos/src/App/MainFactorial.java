@@ -1,9 +1,11 @@
 package App;
 import util.Algoritmos;
-public class Main {
+public class MainFactorial {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/**
+		 * Probar el  sumatorio de 3
+		 */
 		int sumatorio= Algoritmos.sumatorio(3);
 		System.out.println(sumatorio);
 	}
