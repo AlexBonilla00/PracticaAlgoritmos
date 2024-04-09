@@ -1,13 +1,16 @@
 package modelo;
-import java.util.*;
 
 /**
- * 
+ *  Clase Rectangulo. Permite crear rectangulos y calcular su area y perimetro.
  */
-public class Rectangulo {
-    public Rectangulo(int base, int altura) {
-        this.base = base;
-        this.altura = altura;
+public class Rectangulo extends Figura{
+	
+	/**
+	 *  Constructor por defecto. Crea un rectangulo con base y altura en 1, en metros
+	 */
+    public Rectangulo() {
+        this.base =1;
+        this.altura = 1;
     }
 
     private int base;
@@ -15,11 +18,11 @@ public class Rectangulo {
     private int altura;
 
     /**
-     * constructor de rectangulo
-     * @param base 
-     * @param altura
+     * Constructor que recibe la base y la altura del rectangulo en metros
+     * @param base  	La base del rectangulo, en metros
+     * @param altura	La altura del rectangulo, en metros
      */
-    public void Rectangulo(int base, int altura) {
+    public  Rectangulo(int base, int altura) {
      this.base=base;
      this.altura=altura;
     }
@@ -34,52 +37,41 @@ public class Rectangulo {
         this.altura=1;
     }
 
-    /**
-     * establecer base
-     */
     public void setBase(int base) {
         this.base=base;
     }
 
-    /**
-     * mirar la base
-     * @return
-     */
     public int getBase() {
         // TODO implement here
         return this.base;
     }
 
-    /**
-     * establecer altura
-     * @param altura
-     */
     public void setAltura(int altura) {
         this.altura=altura;
     }
 
-    /**
-     * recoger altura
-     * @return
-     */
     public int getAltura() {
         return this.altura;
     }
 
     /**
-     * calcular perímetro , base*2+altura*2
+     * @see modelo.Figura#area()
      */
-    public int calcularPerimetro() {
-       int perimetro= 2*base+altura*2;
-        return perimetro;
-    }
-
-    /**
-     * calcular area del rectangulo,base *altura
-     */
-    public int calcularArea() {
+	@Override
+	public double area() {
     	int area=base*altura;
     	return area;
     }
+ /**
+     * @see modelo.Figura#perimetro()
+     */
+
+	@Override
+	public double perimetro() {
+
+	       int perimetro= 2*base+altura*2;
+	        return perimetro;
+	    }
+
 
 }
