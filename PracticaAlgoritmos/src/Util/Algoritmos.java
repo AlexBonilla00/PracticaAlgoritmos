@@ -1,51 +1,36 @@
 package Util;
 
-public class Algoritmos {
+public abstract class  Algoritmos {
 	/**
-     * Calcula el número de fibonacci de un número dado.
+     * Calcula el numero de fibonacci de un numero.
      *
-     * @param numero el número entero para calcular su fibonacci.
-     * @return el número de fibonacci de {@code numero}.
+     * @param numero el numero para calcular su fibonacci.
+     * @return el número en fibonacci.
      */
     public static int fibonacci(int numero) {
         if (numero <= 1) {
             return numero;
         }
-        return fibonacci(numero - 1) + fibonacci(numero - 2);
+        else {
+        	return fibonacci(numero - 1) + fibonacci(numero - 2); 
+        }
+       
     }
 
-    /**
-     * Calcula el factorial de un número dado.
+	/**
+     * Calcula el factorial de un numero.
      *
-     * @param numero es el numero entero para calcular su factorial.
-     * @return el factorial de {@code numero}.
+     * @param n El numero del cual se calculará el factorial.
+     * @return El factorial del numero n.
      */
-    public static int factorial(int numero) {
-        if (numero <= 1) {
-            return 1;
+    public static int factorial(int n) {
+        int factorial = 1;
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
         }
-        return numero * factorial(numero - 1);
+        return factorial;
     }
 
-    /**
-     * Verifica si un número dado es primo.
-     *
-     * @param numero es el número entero a verificar.
-     * @return {@code true} si {@code numero} es primo, {@code false} en caso contrario.
-     */
-    public static boolean esPrimo(int numero) {
-        if (numero <= 1) {
-            return false;
-        }
-        for (int i = 2; i <= Math.sqrt(numero); i++) {
-            if (numero % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
 }
-	
-	
 	
 
