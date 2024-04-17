@@ -30,4 +30,22 @@ public class Algoritmos {
         }
         return factorial;
     }
+    
+    /**
+     * Verifica si el numero es primo o no, en true o false.
+     *
+     * @param numero  numero entero a verificar.
+     * @return true si no es primo  y false si es primo .
+     */
+    public static boolean esPrimo(int numero) {
+        if (numero <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
