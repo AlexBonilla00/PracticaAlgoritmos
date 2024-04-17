@@ -20,13 +20,7 @@ public class Main {
             resultadoP[i] = Algoritmos.esPrimo(numeros[i]);
             System.out.println(numeros[i]); 
         }
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Número: [" + numeros[i]+"]");
-            System.out.println("Fibonacci: [" + resultadoFi[i]+"]");
-            System.out.println("Factorial: " + resultadoFa[i]+"]");
-            System.out.println("Es primo: [" + resultadoP[i]+"]");
-            System.out.println("");
-        }
+
     }
 }
 
