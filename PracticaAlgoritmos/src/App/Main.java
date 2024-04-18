@@ -18,7 +18,6 @@ public class Main {
             resultadoFi[i] = Algoritmos.fibonacci(numeros[i]);
             resultadoFa[i] = Algoritmos.factorial(numeros[i]);
             resultadoP[i] = Algoritmos.esPrimo(numeros[i]);
-            System.out.println(numeros[i]); 
         }
 
     }
